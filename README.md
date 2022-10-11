@@ -21,7 +21,7 @@ A simple CRUD JavaEE application will be deployed to the WebSphere clusters late
 1. Locate the path where the repository was downloaded.
 1. Change to its sub-dirctory `websphere-cafe`.
 1. Compile and package the sample application: `mvn clean package`.
-1. The package should be successfully generated and located at `<your local clone of the repo>/websphere-cafe-application/target/websphere-cafe.ear`. If you don't see this, you must troubleshoot and resolve the reason why before continuing.
+1. The package should be successfully generated and located at `<your local clone of the repo>/websphere-cafe/websphere-cafe-application/target/websphere-cafe.ear`. If you don't see this, you must troubleshoot and resolve the reason why before continuing.
 
 ## Setting up Managed PostgreSQL databases on Azure
 
@@ -214,7 +214,7 @@ The next step is to configure database session persistence for all cluster membe
 After all required data sources are configured, you are able to deploy the sample application to the cluster.
 
 1. In the left navigation area, click "Applications" > "Application Types" > "WebSphere enterprise applications".
-1. Click "Install" > "Choose File" > select the package located at `<your local clone of the repo>/websphere-cafe-application/target/websphere-cafe.ear` > click Open > click "Next" > "Next" > "Next" > Press Ctrl and click all items listed in "Clusters and servers", select all modules, click "Apply" > click "Next" > click "Next" > click "Finish" > click "Save" > click "OK" unless you see all nodes are synchronized.
+1. Click "Install" > "Choose File" > select the package located at `<your local clone of the repo>/websphere-cafe/websphere-cafe-application/target/websphere-cafe.ear` > click Open > click "Next" > "Next" > "Next" > Press Ctrl and click all items listed in "Clusters and servers", select all modules, click "Apply" > click "Next" > click "Next" > click "Finish" > click "Save" > click "OK" unless you see all nodes are synchronized.
 1. Check installed application "websphere-cafe" > Click "Start" > Wait until you see messages indicating application successfully started. If you are not able to see the successful message, you must troubleshoot and resolve the reason why before continuing.
 
 ### Setting up the passive WebSphere cluster
